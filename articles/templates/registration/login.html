@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Login{% endblock title %}
+
+{% block style %}
+    <style>
+        .red {
+            color: red;
+        }
+        .login_style {
+            width: 500px;
+            margin: auto;
+        }
+    </style>
+{% endblock style %}
+
+{% block body %}
+<div class="container my-4 login_style">
+    <h1>Login User</h1>
+
+    {% if form.errors %}
+        <p class="red">Incorrect Username or Password!</p>
+    {% else %}
+        <p>Use the following form below for the login.</p>
+    {% endif  %}
+    <form action="" method="post" novalidate>
+        {% csrf_token %}
+        {{form | crispy}}
+        <input type="hidden" name="next" value="{{next}}" />
+        <input type="submit" value="Login" class="btn btn-success" />
+    </form>
+</div>
+{% endblock body %}
