@@ -11,7 +11,7 @@ from .forms import LoginForm, UserRegistration, ArticleRegistrationForm, Article
 
 def article_list(request):
     article_list = Article.objects.all().order_by('-published')
-    paginator = Paginator(article_list, 2)
+    paginator = Paginator(article_list, 3)
     page = request.GET.get('page')
 
     try:

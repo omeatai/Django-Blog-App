@@ -1,0 +1,57 @@
+body {
+  /* background: #ccced6; */
+  background: #000;
+}
+
+.h1-style {
+  margin: 2rem 0;
+  color: #003d5b;
+}
+
+.link-style {
+  text-decoration: none;
+  color: black;
+}
+
+.link-style:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+.article_style {
+  width: 500px;
+  margin: auto;
+}
+
+.register_style {
+  width: 500px;
+  margin: auto;
+}
+
+.update_style {
+  width: 700px;
+  margin: auto;
+}
+
+.red {
+  color: red;
+}
+
+.paginator,
+.paginator-next,
+.paginator-prev {
+  color: white;
+  background: black;
+  font-size: 12px;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.paginator-next {
+  border-radius: 0 10px 10px 0;
+  background: gray;
+}
+.paginator-prev {
+  border-radius: 10px 0 0 10px;
+  background: gray;
+}

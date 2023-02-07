@@ -2,26 +2,11 @@
 
 {% block title %} Article List {% endblock title%}
 
-{% block style %}
-<style>
-    .h1-style {
-        margin: 2rem 0;
-        color: #2c9df0;
-    }
-    .link-style {
-        text-decoration: none;
-        color:black;
-    }
-    .link-style:hover {
-        text-decoration: none;
-        color:gray;
-    }
-</style>
-{% endblock style %}
+{% block style %}{% endblock style %}
 
 {%block body %}
 <section class="container">
-    <h1 class="h1-style">Article List</h1>
+    <h1 class="h1-style">Articles</h1>
     {% for article in articles %}
         <span class="badge rounded-pill text-bg-success">Author: {{article.author}}</span>
         <h1><a class="link-style" href="{% url 'article_details' article.slug %}">{{article.title}}</a></h1>
