@@ -81,9 +81,26 @@ WSGI_APPLICATION = 'djblog.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'mbneppre_djangoblog',
+    #     'USER': 'mbneppre_admin',
+    #     'PASSWORD': 'Admin123###',
+    #     'HOST': 'https://cpanel-p3.web-hosting.com/',
+    #     'PORT': 5432,
+    # }
+
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get("PGDATABASE"),
+        'USER': os.environ.get("PGUSER"),
+        'PASSWORD': os.environ.get("PGPASSWORD"),
+        'HOST':  os.environ.get("PGHOST"),
+        'PORT': os.environ.get("PGPORT"),
     }
 }
 
