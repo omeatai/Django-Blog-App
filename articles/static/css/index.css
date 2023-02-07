@@ -5,17 +5,17 @@ body {
 
 .h1-style {
   margin: 2rem 0;
-  color: #003d5b;
+  color: #760000;
 }
 
 .link-style {
   text-decoration: none;
-  color: black;
+  color: gray;
 }
 
 .link-style:hover {
   text-decoration: none;
-  color: gray;
+  color: black;
 }
 
 .article_style {

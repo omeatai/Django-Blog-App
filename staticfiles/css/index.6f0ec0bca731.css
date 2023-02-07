@@ -10,12 +10,12 @@ body {
 
 .link-style {
   text-decoration: none;
-  color: gray;
+  color: black;
 }
 
 .link-style:hover {
   text-decoration: none;
-  color: black;
+  color: gray;
 }
 
 .article_style {
