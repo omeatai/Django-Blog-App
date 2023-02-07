@@ -7,5 +7,5 @@ from django.utils.text import slugify
 @receiver(pre_save, sender=Article)
 def add_slug(sender, instance, *args, **kwargs):
     if instance and not instance.slug:
-        slug = slugify (instance.title)
+        slug = slugify(instance.title)
         instance.slug = slug

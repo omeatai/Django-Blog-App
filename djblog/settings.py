@@ -76,7 +76,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'djblog.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
@@ -84,14 +83,6 @@ DATABASES = {
     # 'default': {
     #     'ENGINE': 'django.db.backends.sqlite3',
     #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql',
-    #     'NAME': 'mbneppre_djangoblog',
-    #     'USER': 'mbneppre_admin',
-    #     'PASSWORD': 'Admin123###',
-    #     'HOST': 'https://cpanel-p3.web-hosting.com/',
-    #     'PORT': 5432,
     # }
 
     'default': {
@@ -151,9 +142,6 @@ LOGOUT_URL = 'logout'
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STATIC_URL = "static/"
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-# STATIC_ROOT = os.path.join(BASE_DIR, '/static')
-# MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
-# STATICFILES_DIRS = [ BASE_DIR / "articles/static"]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
